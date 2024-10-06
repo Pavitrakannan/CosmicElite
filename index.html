@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Elite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin: 20px;">
+    <!-- Header Section -->
+    <header>
+        <img src="logo.jpg" height="100px" width="200px">
+        <h1>"Cosmic Elite"</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#theories">Theories</a></li>
+                <li><a href="#orrery">Orrery</a></li>
+                <li><a href="#updates">Updates</a></li>
+                <li><a href="https://coders-hub-solar-system.vercel.app/" class="get-started-btn scrollto">Orrery Simulator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-zoom">
+        <h2>About Cosmic Elite</h2>
+        <p align="left">Cosmic Elite is your gateway to explore the mysteries of the universe. We bring you the latest missions, theories, and updates from deep space exploration.</p>
+        <video controls>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+                
+    </section>
+
+    <!-- Missions Section -->
+    <section id="missions" class="section slide-left">
+        <h2>Space Missions</h2>
+        <p>Discover past, present, and future missions that take humanity deeper into the cosmos.</p>
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="1d.jpeg" class="img-fluid" alt="" height="550" width="650" align="left">
+              <img src="1a.png" class="img-fluid" alt="" height="550" width="650" align="right"></div>
+              <div class="swiper-slide"><img src="1c.jpg" class="img-fluid" alt="" height="550" width="1300" align="center">
+              <img src="1b.jpeg" class="img-fluid" alt="" height="700px" align="center"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        <div class="video-container">
+            <h2>ISRO All Mission Till 2030 | The Upcomming Space Superpower ISRO</h2>
+            <video controls>
+                <source src="missions.mp4" type="video/mp4" width="1000">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Theories Section -->
+    <section id="theories" class="section slide-right">
+        <h2>Cosmic Theories</h2>
+        <p>Explore groundbreaking theories about the origin, evolution, and future of the universe.</p>
+        <img src="https://i.pinimg.com/736x/32/ea/b0/32eab015d4346d2fc443381020719615.jpg" alt="Cosmic Theory" class="responsive-image">
+        <h2>10 wild theories about the universe</h2>
+        <p color="white">
+            <a href="braneworld.html">Braneworld</a><br>
+            <a href="bst.html">The Big Splat</a><br>
+            <a href="Plasma-Filled.html">Plasma-filled cosmos</a><br>
+            <a href="Holographic.html">The holographic universe</a><br>
+            <a href="SSU.html">The steady-state universe</a><br>
+            <a href="Multiverse.html">The multiverse</a><br>
+            <a href="wegot.html">We got gravity wrong</a><br>
+            <a href="superfluid.html">Superfluid space-time</a><br>
+            <a href="simulation.html">Simulation theory</a><br>
+            <a href="CET.html">Cosmic ego-trip</a><br>
+        </p>
+    </section>
+
+    <section id="orrery" class="section fade-zoom">
+        <h2>Orries</h2>
+        <p align="left">An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and motions of the planets and moons, usually according to the heliocentric model. It may also represent the relative sizes of these bodies; however, since accurate scaling is often not practical due to the actual large ratio differences, a scaled-down approximation may be used instead. </p>
+        <img src="orrery.jpg" alt="Orrery"  height="350" width="450" align="left">
+        <video controls>
+            <source src="orrery.mp4" type="video/mp4" width="1000">
+        </video>
+        <h1><a href="https://pavitrakannan.github.io/Solar-System-/">Launch a 3d Orrery View</a></h1>
+        <h2><a href="https://www.the-observatory.org/the-orrery" alt="More info">Click to know more!!!</a></h2>
+        
+                
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="section fade-slide-up">
+        <h2>Latest Updates</h2>
+        <p>Stay updated with the latest news and discoveries from the world of space science.</p>
+        <a href="https://www.nasa.gov/">
+            <img src="https://i.ytimg.com/vi/qFeY7yGFqyI/maxresdefault.jpg" alt="Space Updates" class="responsive-image" height="350" width="800">
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cosmic Elite. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Orrery - Interactive Solar System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>The Orrery</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">The Orrery</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="orrery-container">
+      <!-- This is where the 3D Orrery will be rendered -->
+      <div id="orrery"></div>
+    </section>
+
+    <section class="info">
+      <h2 align="center">About the Orrery</h2>
+      <p>This is an interactive 3D model of the solar system. Use your mouse to explore planets, asteroids, and other celestial objects.</p>
+      <p align="left">An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and motions of the planets and moons, usually according to the heliocentric model. It may also represent the relative sizes of these bodies; however, since accurate scaling is often not practical due to the actual large ratio differences, a scaled-down approximation may be used instead. </p>
+      <img src="orrery.jpg" alt="Orrery"  height="350" width="450" align="left">
+        <video controls>
+            <source src="orrery.mp4" type="video/mp4" width="1000">
+        </video>
+        <h1><a href="https://pavitrakannan.github.io/Solar-System-/">Launch a 3d Orrery View</a></h1>
+        <h2><a href="https://www.the-observatory.org/the-orrery" alt="More info">Click to know more!!!</a></h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 The Orrery Project | Created by [Your Name]</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
